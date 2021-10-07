@@ -1,0 +1,32 @@
+<div class="row mt-3">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        {{ receptas.name }}
+      </div>
+      <div class="card-body">
+        <div class="mb-3">
+          <ul class="list-unstyled">
+            <li><b>Aprašymas:</b></li>
+            <li>{{ receptas.description }}</li>
+            <hr>
+            <li><b>Kaloringumas:</b>
+              <ul>
+                <li><i>Baltymai: {{ receptas.proteins }}</i></li>
+                <li><i>Angliavandeniai: {{ receptas.carbs }}</i></li>
+                <li><i>Riebalai: {{ receptas.fat }}</i></li>
+                <li><i>Kalorijos: {{ receptas.calories }}</i></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="card mb-3">
+             <div class="card-header">Ingredientai:</div>
+             <div class="card-body">
+                <app-ingridientai [ingredientai]="receptas.ingredients"></app-ingridientai>
+             </div>
+          </div>
+          <a routerLink="/" class="btn btn-success">Atgal</a>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,20 @@
+<div class="row">
+   <div class="col-md-12">
+      <div class="card mt-3">
+         <div class="card-header"><b>Pridėti naują ingredientą:</b></div>
+         <div class="card-body">
+            <div class="mb-3">
+               <input type="text" placeholder="Pavadinimas:" class="form-control" #name>
+            </div>
+            <div class="mb-3">
+               <input type="text" placeholder="Kiekis:" class="form-control" #amount>
+            </div>
+            <div class="mb-3">
+               <input type="text" placeholder="Mato vienetas:" class="form-control" #units>
+            </div>
+            <a [routerLink]="['/aprasymas',id]" class="btn btn-success">Atgal</a>
+            <a class="btn btn-info float-end" (click)=assign(id,name,amount,units)>Išsaugoti</a>
+         </div>
+      </div>
+   </div>
+</div>

@@ -1,0 +1,4 @@
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let ingredientas of ingredientai">{{ingredientas.name}} {{ingredientas.amount}}{{ingredientas.units}}</li>
+</ul>
+<a [routerLink]="['/aprasymas',id,'edit']" class="btn btn-warning float-end mt-3">Pridėti</a>

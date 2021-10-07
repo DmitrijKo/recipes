@@ -1,0 +1,13 @@
+<div class="row mt-3">
+   <div class="offset-md-3 col-md-6">
+     <div class="card">
+       <div class="card-body">
+         <div class="list-group">
+           <a [routerLink]="['aprasymas',i]" class="list-group-item list-group-item-action" *ngFor="let receptas of receptai; let i=index">
+             {{receptas.name}}
+           </a>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
